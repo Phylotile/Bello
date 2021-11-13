@@ -80,6 +80,15 @@ a {
     display: flex;
     align-items: center;
   }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFFFF;
+    box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+    border-radius: 5px;
+  }
 }
 .hollow-btn {
   width: 161px;
@@ -282,5 +291,49 @@ a {
   }
   .section__link {
     font-weight: 500;
+  }
+}
+
+// HELP
+.help {
+  padding: 148px 0 164px;
+  background: #FFFFFF;
+  .section__side:nth-child(1) {
+    padding-right: 67px;
+  }
+  .section__title {
+    margin: 27px 0 35px;
+    font-size: 45px;
+  }
+  .section__arrow {
+    margin-top: 15px;
+  }
+  &__frame {
+    position: relative;
+    svg {
+      position: absolute;
+      top: -35px;
+      left: -45px;
+      z-index: 0;
+    }
+  }
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  .section__card {
+    position: absolute;
+    left: -60px;
+    bottom: -25px;
+    z-index: 2;
+    width: 326px;
+    height: 67px;
+  }
+  &__prompt {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1D253C;
   }
 }
