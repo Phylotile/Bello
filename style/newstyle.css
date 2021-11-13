@@ -41,6 +41,9 @@ a {
 .grid__2fr {
   grid-template-columns: 1fr 1fr;
 }
+.grid__3fr {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .section__side {
   display: flex;
@@ -92,7 +95,7 @@ a {
   border-radius: 5px;
 }
 
-.hollow-btn {
+.btn-hollow {
   width: 161px;
   height: 44px;
   border: 1px solid rgba(29, 37, 60, 0.2);
@@ -103,13 +106,12 @@ a {
   line-height: 17px;
   text-transform: uppercase;
 }
-.hollow-btn:hover {
+.btn-hollow:hover {
   color: #FFFFFF;
   background: #F46752;
   border: 1px solid #F46752;
 }
-
-.orange-btn {
+.btn-orange {
   width: 220px;
   height: 61px;
   color: #FFFFFF;
@@ -124,7 +126,7 @@ a {
   line-height: 19px;
   text-transform: uppercase;
 }
-.orange-btn:hover {
+.btn-orange:hover {
   color: #F46752;
   background: none;
 }
@@ -221,20 +223,21 @@ a {
 }
 
 .affordable {
-  padding: 85px 0;
+  padding: 85px 0 84px;
   background: #F9F5F2;
-}
-.affordable .section__side:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-image: url("../images/affordable/affordable_img.png");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 .affordable .section__side:nth-child(2) {
   padding-left: 94px;
+}
+.affordable .section__title {
+  margin: 26px 0 19px;
+  font-weight: 600;
+}
+.affordable .section__arrow {
+  margin-top: 32px;
+}
+.affordable .section__link {
+  font-weight: 500;
 }
 .affordable__frame {
   width: 500px;
@@ -260,16 +263,6 @@ a {
   line-height: 19px;
   color: #F46752;
 }
-.affordable .section__title {
-  margin: 26px 0 19px;
-  font-weight: 600;
-}
-.affordable .section__arrow {
-  margin-top: 32px;
-}
-.affordable .section__link {
-  font-weight: 500;
-}
 
 .help {
   padding: 148px 0 164px;
@@ -285,6 +278,14 @@ a {
 .help .section__arrow {
   margin-top: 15px;
 }
+.help .section__card {
+  position: absolute;
+  left: -60px;
+  bottom: -25px;
+  z-index: 2;
+  width: 326px;
+  height: 67px;
+}
 .help__frame {
   position: relative;
 }
@@ -298,20 +299,101 @@ a {
   position: relative;
   z-index: 1;
 }
-.help .section__card {
-  position: absolute;
-  left: -60px;
-  bottom: -25px;
-  z-index: 2;
-  width: 326px;
-  height: 67px;
-}
 .help__prompt {
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 28px;
   color: #1D253C;
+}
+
+.safe {
+  position: relative;
+  padding: 91px 0 85px;
+  background: #F8F8F8;
+}
+.safe__frame {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.safe .section__title {
+  margin: 30px 0 37px;
+  font-size: 43px;
+}
+.safe .section__text {
+  margin-bottom: 41px;
+  width: 1077px;
+}
+.safe .section__desc, .safe .section__title, .safe .section__text {
+  text-align: center;
+}
+.safe .grid__3fr {
+  grid-column-gap: 70px;
+}
+.safe__card {
+  height: 310px;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.04);
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.safe__card:nth-child(1) {
+  background-image: url("../images/safe/safe_card1_img.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 70px;
+}
+.safe__card:nth-child(1) .safe__content {
+  margin-top: 5px;
+  width: 212px;
+  font-size: 12px;
+}
+.safe__card:nth-child(1) .safe__content span {
+  text-decoration-line: underline;
+  color: #1D253C;
+}
+.safe__card:nth-child(2) {
+  background-image: url("../images/safe/safe_card2_img.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30px;
+}
+.safe__card:nth-child(2) .safe__content {
+  margin-top: 15px;
+  width: 247px;
+  font-size: 11px;
+}
+.safe__card:nth-child(3) {
+  background-image: url("../images/safe/safe_card3_img.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 44px;
+}
+.safe__card:nth-child(3) .safe__content {
+  margin-top: 10px;
+  width: 244px;
+  font-size: 16px;
+}
+.safe__headline {
+  margin-top: 155px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #1D253C;
+}
+.safe__content {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  text-align: center;
+  color: #5A6482;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
