@@ -13,6 +13,19 @@
 
 @font-face {
     font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-SemiBold.eot');
+    src: url('../fonts/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/WorkSans-SemiBold.woff') format('woff'),
+    url('../fonts/WorkSans-SemiBold.ttf') format('truetype'),
+    url('../fonts/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
     src: url('../fonts/WorkSans-Medium.eot');
     src: url('../fonts/WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
         url('../fonts/WorkSans-Medium.woff2') format('woff2'),
@@ -39,13 +52,13 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('../fonts/WorkSans-SemiBold.eot');
-    src: url('../fonts/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
-        url('../fonts/WorkSans-SemiBold.woff') format('woff'),
-        url('../fonts/WorkSans-SemiBold.ttf') format('truetype'),
-        url('../fonts/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
-    font-weight: 600;
+    src: url('../fonts/WorkSans-Light.eot');
+    src: url('../fonts/WorkSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WorkSans-Light.woff2') format('woff2'),
+    url('../fonts/WorkSans-Light.woff') format('woff'),
+    url('../fonts/WorkSans-Light.ttf') format('truetype'),
+    url('../fonts/WorkSans-Light.svg#WorkSans-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
