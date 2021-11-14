@@ -44,6 +44,9 @@ a {
 .grid__3fr {
   grid-template-columns: repeat(3, 1fr);
 }
+.grid__4fr {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .section__side {
   display: flex;
@@ -74,7 +77,7 @@ a {
 }
 .section__link {
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 8px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -128,10 +131,15 @@ a {
 }
 .btn-orange svg {
   margin-left: 6px;
+  fill: #FFFFFF;
+  transition: all 0.6s ease;
 }
 .btn-orange:hover {
   color: #F46752;
   background: none;
+}
+.btn-orange:hover svg {
+  fill: #F46752;
 }
 
 .animation__aquamarine {
@@ -551,11 +559,87 @@ a {
 .free .section__title {
   margin: 30px 0 24px;
 }
-.free .section__arrow {
-  margin-top: 23px;
+.free .section__text {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 23px;
 }
 .free .section__link {
   color: #007189;
+}
+
+.features {
+  padding: 160px 0 133px;
+  background: #FFFFFF;
+}
+.features .grid {
+  grid-column-gap: 20px;
+}
+.features__headline {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 42px;
+}
+.features__content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5A6482;
+}
+.features__link {
+  display: inline-block;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.features__card {
+  height: 323px;
+  padding: 40px 0 35px 22px;
+  box-sizing: border-box;
+}
+.features__card:nth-child(1) {
+  background: rgba(169, 216, 255, 0.3);
+}
+.features__card:nth-child(1) .features__headline,
+.features__card:nth-child(1) .features__link {
+  color: #7CAFDD;
+}
+.features__card:nth-child(2) {
+  background: rgba(255, 174, 104, 0.3);
+}
+.features__card:nth-child(2) .features__headline,
+.features__card:nth-child(2) .features__link {
+  color: #E79751;
+}
+.features__card:nth-child(2) .features__headline {
+  width: 153px;
+}
+.features__card:nth-child(3) {
+  background: rgba(250, 82, 64, 0.3);
+}
+.features__card:nth-child(3) .features__headline,
+.features__card:nth-child(3) .features__link {
+  color: #FA5240;
+}
+.features__card:nth-child(4) {
+  background: rgba(18, 111, 133, 0.3);
+}
+.features__card:nth-child(4) .features__headline,
+.features__card:nth-child(4) .features__link {
+  color: #126F85;
+}
+.features__card:nth-child(4) .features__headline {
+  width: 186px;
+}
+.features__block {
+  height: 146px;
+  margin-bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

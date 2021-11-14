@@ -43,6 +43,9 @@ a {
   &__3fr {
     grid-template-columns: repeat(3, 1fr);
   }
+  &__4fr {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .section {
   &__side {
@@ -74,7 +77,7 @@ a {
   }
   &__link {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 8px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -132,10 +135,15 @@ a {
     text-transform: uppercase;
     svg {
       margin-left: 6px;
+      fill: #FFFFFF;
+      transition: all .6s ease;
     }
     &:hover {
       color: $colorOrange;
       background: none;
+      svg {
+        fill: $colorOrange;
+      }
     }
   }
 }
@@ -599,8 +607,9 @@ a {
     &__title {
       margin: 30px 0 24px;
     }
-    &__arrow {
-      margin-top: 23px;
+    &__text {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 23px;
     }
     &__link {
       color: #007189;
@@ -609,6 +618,80 @@ a {
 }
 
 //FEATURES
+.features {
+  padding: 160px 0 133px;
+  background: #FFFFFF;
+  .grid {
+    grid-column-gap: 20px;
+  }
+  &__headline {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+  }
+  &__content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5A6482;
+  }
+  &__link {
+    display: inline-block;
+    margin-right: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__card {
+    height: 323px;
+    padding: 40px 0 35px 22px;
+    box-sizing: border-box;
+    &:nth-child(1) {
+      background: rgba(169, 216, 255, 0.3);
+      .features__headline,
+      .features__link {
+        color: #7CAFDD;
+      }
+    }
+    &:nth-child(2) {
+      background: rgba(255, 174, 104, 0.3);
+      .features__headline,
+      .features__link {
+        color: #E79751;
+      }
+      .features__headline {
+        width: 153px;
+      }
+    }
+    &:nth-child(3) {
+      background: rgba(250, 82, 64, 0.3);
+      .features__headline,
+      .features__link {
+        color: #FA5240;
+      }
+    }
+    &:nth-child(4) {
+      background: rgba(18, 111, 133, 0.3);
+      .features__headline,
+      .features__link {
+        color: #126F85;
+      }
+      .features__headline {
+        width: 186px;
+      }
+    }
+  }
+  &__block {
+    height: 146px;
+    margin-bottom: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 
 //COMMUNITY
 
