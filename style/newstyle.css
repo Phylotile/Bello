@@ -240,6 +240,7 @@ a {
   margin-top: 32px;
 }
 .affordable .section__link {
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
 .affordable__frame {
@@ -412,6 +413,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.insurance .section__desc {
+  font-weight: 500;
+}
 .insurance .section__title {
   margin: 26px 0 15px;
   color: #FFFFFF;
@@ -506,6 +510,52 @@ a {
 }
 .insurance .btn-orange {
   margin-top: 32px;
+}
+
+.free {
+  padding: 148px 0 164px;
+  background: #F9F5F2;
+}
+.free .section__side:nth-child(2) {
+  padding-left: 95px;
+}
+.free .section__frame {
+  position: relative;
+}
+.free .section__frame svg {
+  position: absolute;
+  top: -35px;
+  left: -45px;
+  z-index: 0;
+}
+.free .section__frame img {
+  position: relative;
+  z-index: 1;
+}
+.free .section__card {
+  position: absolute;
+  right: 44px;
+  bottom: -25px;
+  z-index: 2;
+  width: 307px;
+  height: 50px;
+}
+.free .section__card .free__prompt {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 28px;
+  color: #1D253C;
+}
+.free .section__title {
+  margin: 30px 0 24px;
+}
+.free .section__arrow {
+  margin-top: 23px;
+}
+.free .section__link {
+  color: #007189;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
