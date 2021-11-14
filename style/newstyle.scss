@@ -221,10 +221,10 @@ a {
   background-position-x: right;
   background-position-y: 17px;
   &__container {
-    //height: inherit;
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 223px 10px 0 10px;
     height: calc(100vh - 223px);
-    padding-top: 223px;
-    padding-left: 106px;
   }
   &__desc {
     font-style: normal;
@@ -702,10 +702,10 @@ a {
 
 //COMMUNITY
 .community {
-  position: relative;
   padding: 107px 0 85px;
   background: #E5F3FE;
   .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -714,13 +714,13 @@ a {
     &__frame {
       &:nth-child(1) {
         position: absolute;
-        bottom: 0;
-        left: 64px;
+        bottom: -85px;
+        left: -106px;
       }
       &:nth-child(2) {
         position: absolute;
-        bottom: 0;
-        right: 252px;
+        bottom: -85px;
+        right: 82px;
       }
     }
     &__title {
@@ -841,3 +841,21 @@ input {
 }
 
 //BOTTOM-FOOTER
+.bottom-footer {
+  padding: 18px 0;
+  background: #F8F8F8;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5A6482;
+  }
+}
