@@ -126,15 +126,18 @@ a {
   line-height: 19px;
   text-transform: uppercase;
 }
+.btn-orange svg {
+  margin-left: 6px;
+}
 .btn-orange:hover {
   color: #F46752;
   background: none;
 }
 
-.animation__underline {
+.animation__aquamarine {
   position: relative;
 }
-.animation__underline:before {
+.animation__aquamarine:before {
   content: "";
   position: absolute;
   top: 22.5px;
@@ -147,10 +150,10 @@ a {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
-.animation__underline:hover {
+.animation__aquamarine:hover {
   color: #007188;
 }
-.animation__underline:hover:before {
+.animation__aquamarine:hover:before {
   opacity: 1;
 }
 
@@ -175,7 +178,7 @@ a {
 .header__link {
   margin-left: 35px;
 }
-.header__btn {
+.header .btn-hollow {
   font-weight: 600;
 }
 .header__log-in {
@@ -312,6 +315,11 @@ a {
   padding: 91px 0 85px;
   background: #F8F8F8;
 }
+.safe .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .safe__frame {
   position: absolute;
   top: -110px;
@@ -327,12 +335,11 @@ a {
 }
 .safe .section__text {
   margin-bottom: 41px;
+  text-align: center;
   width: 1077px;
 }
-.safe .section__desc, .safe .section__title, .safe .section__text {
-  text-align: center;
-}
-.safe .grid__3fr {
+.safe .grid {
+  width: 100%;
   grid-column-gap: 70px;
 }
 .safe__card {
@@ -394,6 +401,111 @@ a {
   line-height: 26px;
   text-align: center;
   color: #5A6482;
+}
+
+.insurance {
+  padding: 120px 101px;
+  background: #363839;
+}
+.insurance .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.insurance .section__title {
+  margin: 26px 0 15px;
+  color: #FFFFFF;
+}
+.insurance .section__text {
+  width: 731px;
+  text-align: center;
+  color: #ACB4BF;
+}
+.insurance .grid {
+  position: relative;
+  width: 100%;
+  margin-top: 63px;
+}
+.insurance .grid svg {
+  position: absolute;
+}
+.insurance__headline {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.insurance__content {
+  width: 234px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ACB4BF;
+}
+.insurance__card {
+  padding-top: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.insurance__card svg {
+  position: absolute;
+  z-index: -1;
+}
+.insurance__card:nth-child(1) {
+  background-image: url("../images/insurance/insurance_number-1.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 4px;
+}
+.insurance__card:nth-child(1) svg {
+  top: 24px;
+  left: 185px;
+}
+.insurance__card:nth-child(2) {
+  background-image: url("../images/insurance/insurance_number-2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10px;
+}
+.insurance__card:nth-child(2) svg {
+  top: 24px;
+  left: 160px;
+}
+.insurance__card:nth-child(3) {
+  background-image: url("../images/insurance/insurance_number-3.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+.insurance__card:nth-child(3) svg {
+  top: 10px;
+  left: 163px;
+}
+.insurance__card:nth-child(3) .insurance__content {
+  width: 256px;
+}
+.insurance__confetti:nth-of-type(1) {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 16px;
+  margin: 0 auto;
+}
+.insurance__confetti:nth-of-type(2) {
+  position: absolute;
+  bottom: 100px;
+  left: 933px;
+}
+.insurance .btn-orange {
+  margin-top: 32px;
 }
 
 /*# sourceMappingURL=newstyle.css.map */

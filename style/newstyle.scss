@@ -1,6 +1,10 @@
 @import "./stylesheet.css";
 @import "./media.css";
 
+$colorOrange: #F46752;
+$colorAquamarine: #007188;
+$colorTurquoise: #126F86;
+
 body {
   margin: 0;
   padding: 0;
@@ -52,7 +56,7 @@ a {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #F46752;
+    color: $colorOrange;
   }
   &__title {
     font-style: normal;
@@ -76,7 +80,7 @@ a {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    color: #126F86;
+    color: $colorTurquoise;
   }
   &__arrow {
     display: flex;
@@ -107,15 +111,15 @@ a {
 
     &:hover {
       color: #FFFFFF;
-      background: #F46752;
-      border: 1px solid #F46752;
+      background: $colorOrange;
+      border: 1px solid $colorOrange;
     }
   }
   &-orange {
     width: 220px;
     height: 61px;
     color: #FFFFFF;
-    background: #F46752;
+    background: $colorOrange;
     border: 1px solid rgba(29, 37, 60, 0.2);
     border-radius: 4px;
     box-sizing: border-box;
@@ -126,14 +130,17 @@ a {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    svg {
+      margin-left: 6px;
+    }
     &:hover {
-      color: #F46752;
+      color: $colorOrange;
       background: none;
     }
   }
 }
 .animation {
-  &__underline {
+  &__aquamarine {
     position: relative;
     &:before {
       content: '';
@@ -144,12 +151,12 @@ a {
       margin: 0 auto;
       width: 100%;
       height: 1px;
-      background: #007188;
+      background: $colorAquamarine;
       opacity: 0;
       transition: all .3s ease-out;
     }
     &:hover {
-      color: #007188;
+      color: $colorAquamarine;
       &:before {
         opacity: 1;
       }
@@ -181,7 +188,7 @@ a {
     &:last-child {
     }
   }
-  &__btn {
+  .btn-hollow {
     font-weight: 600;
   }
   &__log-in {
@@ -209,7 +216,7 @@ a {
     font-size: 18px;
     line-height: 27px;
     text-transform: uppercase;
-    color: #F46752;
+    color: $colorOrange;
   }
   &__title {
     width: 463px;
@@ -285,7 +292,7 @@ a {
       font-weight: normal;
       font-size: 16px;
       line-height: 19px;
-      color: #F46752;
+      color: $colorOrange;
     }
   }
 }
@@ -341,6 +348,11 @@ a {
   position: relative;
   padding: 91px 0 85px;
   background: #F8F8F8;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__frame {
     position: absolute;
     top: -110px;
@@ -358,15 +370,12 @@ a {
     }
     &__text {
       margin-bottom: 41px;
+      text-align: center;
       width: 1077px;
     }
-    &__desc,
-    &__title,
-    &__text {
-      text-align: center;
-    }
   }
-  .grid__3fr {
+  .grid {
+    width: 100%;
     grid-column-gap: 70px;
   }
   &__card {
@@ -429,5 +438,117 @@ a {
     line-height: 26px;
     text-align: center;
     color: #5A6482;
+  }
+}
+
+// INSURANCE
+.insurance {
+  padding: 120px 101px;
+  background: #363839;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section {
+    &__title {
+      margin: 26px 0 15px;
+      color: #FFFFFF;
+    }
+    &__text {
+      width: 731px;
+      text-align: center;
+      color: #ACB4BF;
+    }
+  }
+  .grid {
+    position: relative;
+    width: 100%;
+    margin-top: 63px;
+    svg {
+      position: absolute;
+    }
+  }
+  &__headline {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &__content {
+    width: 234px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #ACB4BF;
+  }
+  &__card {
+    padding-top: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    svg {
+      position: absolute;
+      z-index: -1;
+    }
+    &:nth-child(1) {
+      background-image: url("../images/insurance/insurance_number-1.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 4px;
+      svg {
+        top: 24px;
+        left: 185px;
+      }
+    }
+    &:nth-child(2) {
+      //background-color: #a23b2d;
+      background-image: url("../images/insurance/insurance_number-2.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 10px;
+      svg {
+        top: 24px;
+        left: 160px;
+      }
+    }
+    &:nth-child(3) {
+      background-image: url("../images/insurance/insurance_number-3.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      svg {
+        top: 10px;
+        left: 163px;
+      }
+      .insurance__content {
+        width: 256px;
+      }
+    }
+  }
+  &__confetti {
+    &:nth-of-type(1) {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 16px;
+      margin: 0 auto;
+    }
+    &:nth-of-type(2) {
+      position: absolute;
+      bottom: 100px;
+      left: 933px;
+    }
+  }
+  .btn-orange {
+    margin-top: 32px;
   }
 }
